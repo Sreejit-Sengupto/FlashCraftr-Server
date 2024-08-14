@@ -31,7 +31,7 @@ const getFlashCard = async (req: Request, res: Response) => {
     const skip = (page - 1) * limit
 
     const flashCards = await CardModel.find({ username: username }).skip(skip).limit(limit)
-    const totalCards = await CardModel.countDocuments()
+    const totalCards = await CardModel.countDocuments({ username: username })
     if (!flashCards) {
         throw new Error('No flashcards found')
     }
