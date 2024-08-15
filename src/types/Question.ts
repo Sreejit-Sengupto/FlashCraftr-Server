@@ -1,7 +1,7 @@
-import { Document } from "mongoose"
+import { Document } from 'mongoose';
 
 export interface Question extends Document {
-    question: string,
-    answer: string
-    username: string
+    question: string;
+    answer: string;
+    username: string;
 }
