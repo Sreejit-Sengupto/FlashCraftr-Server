@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'path';
-import { isAdmin } from './middlewares/isAdmin';
+// import { isAdmin } from './middlewares/isAdmin';
 import cors from 'cors';
 
 const app = express();

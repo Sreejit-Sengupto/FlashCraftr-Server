@@ -38,13 +38,11 @@ const getFlashCard = async (req: Request, res: Response) => {
     if (!flashCards) {
         throw new Error('No flashcards found');
     }
-    return res
-        .status(200)
-        .json({
-            totalCards,
-            flashCards,
-            message: 'Fetched flashcards successfully',
-        });
+    return res.status(200).json({
+        totalCards,
+        flashCards,
+        message: 'Fetched flashcards successfully',
+    });
 };
 
 const getAllFlashCards = async (req: Request, res: Response) => {
