@@ -35,14 +35,5 @@ import { WebSocket, WebSocketServer } from 'ws';
                 }
             });
         });
-
-        // ws.on('close', (code, reason) => {
-        //     users = Math.max(0, --users)
-        //     wss.clients.forEach(client => {
-        //         if (client.readyState === WebSocket.CLOSING) {
-        //             client.send(JSON.stringify({ users }))
-        //         }
-        //     })
-        // })
     });
 })();
